@@ -1,6 +1,9 @@
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
 
+import neoIconURL from './neo/neo.jpg';
+import neoInsetIconURL from './neo/neo-small.svg';
+
 import musicIconURL from './music/music.png';
 import musicInsetIconURL from './music/music-small.svg';
 
@@ -47,6 +50,26 @@ import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
 export default [
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Neo"
+                description="Name for the 'Neo' extension"
+                id="gui.extension.neo.name"
+            />
+        ),
+        extensionId: 'neo',
+        iconURL: neoIconURL,
+        insetIconURL: neoInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Contrôler Neo"
+                description="Description for the 'Neo' extension"
+                id="gui.extension.neo.description"
+            />
+        ),
+        featured: true
+    },
     {
         name: (
             <FormattedMessage
